@@ -46,6 +46,10 @@ namespace speaking_clock
 
             // Configure speech recognition
             using AudioConfig audioConfig = AudioConfig.FromDefaultMicrophoneInput();
+
+            // Example using a WAV file instead of microphone
+            // AudioConfig.FromWavFileInput("C:\\Users\\johndoe\\Downloads\\what_time_is_it.wav");
+
             using SpeechRecognizer speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
             Console.WriteLine("Speak now...");
 
