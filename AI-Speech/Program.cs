@@ -9,6 +9,7 @@ namespace speaking_clock
         private static SpeechConfig? speechConfig;
         static async Task Main(string[] args)
         {
+            // Lesson: https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/07-speech.html
             try
             {
                 // Get config settings from AppSettings
